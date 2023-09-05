@@ -22,7 +22,7 @@ export default function App() {
   ];
 
   function gerarFrase() {
-    setQuebrar(true)
+    setAbrir(true)
     const random = parseInt(Math.random() * frases.length)
     setMensagem(frases[random])
   }
@@ -69,14 +69,14 @@ const styles = StyleSheet.create({
   },
 
   image: {
-    width: 400,
-    height: 220,
+    width: 200,
+    height: 200,
     marginBottom: 60,
     
   },
 
   button: {
-    backgroundColor: "#FF6347",
+    backgroundColor: "#B22222",
     borderRadius: 100,
     paddingTop: 10,
     paddingVertical: 10,
@@ -87,17 +87,17 @@ const styles = StyleSheet.create({
 
   textButton: {
     fontSize: 20,
-    color: "#FFFAFA",
+    color: "#FFDAB9",
     fontWeight: "bold",
     alignSelf: "center",
   },
 
   text: {
     fontSize: 22,
-    color: '#FF6347',
+    color: '#800000',
     marginBottom: 50,
     fontWeight: 'bold',
-    backgroundColor: '#FFF8DC',
+    // backgroundColor: '#FFF8DC',
     paddingRight: 20,
     paddingLeft: 20
   }
